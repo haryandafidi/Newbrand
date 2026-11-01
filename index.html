@@ -315,28 +315,28 @@
       box-sizing: border-box;
     }
 
-    .promo-track {
-      display: flex;
-      width: max-content;
-      flex-shrink: 0;
-      animation: promoBergerak 5s linear infinite;
-    }
+.promo-track {
+  display: inline-block;
+  width: max-content;
+  white-space: nowrap;
+  animation: scroll-promo 90s linear infinite;
+}
 
-    .promo-track span {
-      flex-shrink: 0;
-      padding-right: 80px;
-      font-size: 16px;
-      font-weight: 700;
-    }
+.promo-track span {
+  display: inline-block;
+  padding-right: 80px;
+  font-size: 16px;
+  font-weight: 700;
+}
 
-    @keyframes promoBergerak {
-      from {
-        transform: translateX(100vw);
-      }
-      to {
-        transform: translateX(-100%);
-      }
-    }
+@keyframes scroll-promo {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
     @media (prefers-reduced-motion: reduce) {
       .promo-track {
